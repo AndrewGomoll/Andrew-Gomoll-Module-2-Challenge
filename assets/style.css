@@ -1,0 +1,99 @@
+/*root is where css variables are created */
+:root{
+    --backgroundColor: #3f448c;
+    --color: white;
+}
+/* "*" contains the font family for all sections of the webpage */
+*   {
+    font-family: arial, Helvetica, sans-serif;
+}
+/*nav contains styling for the entire navigation section */
+nav{
+    padding-top: 15px;
+    margin-right: 30px;
+    margin-top: 15px;
+    float: right;
+    font-size: 20px;
+    background-color:#9d9bcc;
+    border-radius: 25px 25px 0px 0px;
+}
+/*nav ul contains styling for the unordered list in the nav */
+nav ul{
+    text-align: center;
+    margin-right: 30px;
+}
+/*nav li contains styling for the list items within the unordered list with is within the nav */
+nav li{
+    color: var(--color);
+    display: inline;
+    text-align: center;
+    margin: 5px;
+}
+/*body contains styling for the entire body section */
+body{
+    background-color: var(--backgroundColor);
+    color: var(--color);
+}
+/*footer contains styling for the entire footer section */
+footer{
+    text-align: center;
+    background-color: var(--backgroundColor);
+    float: center;
+    margin-top: 25px;
+    margin-bottom: 25px
+}
+/*img contains styling for the portrait picture */
+img{
+    border-radius: 25px;
+    width: 250px
+    
+}
+/*a contains styling for the links within the nav */
+a{
+    text-decoration: none;
+    color: var(--color);
+}
+/*#AboutMe contains styling for the div class AboutME */
+#AboutMe{
+background-color: #9d9bcc;
+float: left;
+width: 100%;
+}
+/*HTMLCSS contains styling for the div class HTMLCSS */
+#HTMLCSS{
+    background-color: #9d9bcc;
+    float: left;
+    width: 100%;
+    
+}
+/*HTMLCSS img contains styling for the image within the HTMLCSS class */
+#HTMLCSS img{
+    width: 30%;
+    min-width: 300px;
+}
+/*JS contains styling for the div class JS */
+#JS{
+    background-color: #9d9bcc;
+    float: left;
+    border-radius: 0px 0px 25px 25px;
+    min-width: 250px;
+    width: 100%;
+}
+/*JS img contains styling for the image within the JS class*/
+#JS img{
+    min-width: 250px;
+}
+/*Media Query contains styling for the nav, HTMLCSS class, and JS class at a width where div tags where overlapping */
+        @media(min-width: 197px){
+    nav{
+        width: 100%;
+        float: left;
+    }
+    #HTMLCSS{
+        display: flex;
+    }
+
+    #JS{
+        display: flex;
+    }
+}
